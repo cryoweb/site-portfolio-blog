@@ -19,6 +19,7 @@ html {
 body {
   margin: 0;
   font-family: sans-serif;
+  color: #21243d;
   background-color: #fff;
 }
 
@@ -49,6 +50,19 @@ svg:not(:root) {
           flex-direction: column;
 }
 
+.page {
+  padding: 90px 0 0 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+@media (max-width: 767.98px) {
+  .page {
+    padding: 30px 0 0 0;
+  }
+}
+
 ._container {
   max-width: 856px;
   margin: 0 auto;
@@ -65,6 +79,55 @@ svg:not(:root) {
     max-width: none;
     padding: 0 10px;
   }
+}
+
+.title {
+  font-size: 44px;
+  line-height: 136.36364%;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+.text {
+  font-size: 16px;
+  line-height: 143.75%;
+}
+
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 47px;
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 145%;
+  font-weight: 500;
+  color: #fff;
+  background-color: #ff6464;
+  border-radius: 2px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff4b4b;
+}
+
+.header {
+  position: relative;
+  z-index: 100;
 }
 
 .header__content {
@@ -102,7 +165,7 @@ svg:not(:root) {
     left: 0;
     padding: 60px 10px 30px 10px;
     overflow: auto;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.95);
     -webkit-transform: translate(0, -100%);
             transform: translate(0, -100%);
     -webkit-transition: -webkit-transform 0.8s ease;
@@ -195,6 +258,126 @@ svg:not(:root) {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     bottom: calc(50% - 1px);
+  }
+}
+
+.hello {
+  padding: 38px 0 70px 0;
+}
+
+@media (max-width: maxWidthContainer12px) {
+  .hello {
+    padding: 0 0 70px 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hello {
+    padding: 0 0 60px 0;
+  }
+}
+
+.hello__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767.98px) {
+  .hello__container {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.hello__content {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 20px 110px 0 0;
+}
+
+.hello__content *:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: maxWidthContainer12px) {
+  .hello__content {
+    padding: 20px 50px 0 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hello__content {
+    padding: 0;
+  }
+}
+
+.hello__title {
+  margin: 0 0 25px 0;
+}
+
+@media (max-width: 767.98px) {
+  .hello__title {
+    margin: 0 0 20px 0;
+  }
+}
+
+.hello__text {
+  margin: 0 0 35px 0;
+}
+
+@media (max-width: 767.98px) {
+  .hello__text {
+    margin: 0 0 25px 0;
+    padding: 0 15px;
+  }
+}
+
+.hello__btn {
+  margin: 0 0 25px 0;
+}
+
+@media (max-width: 767.98px) {
+  .hello__btn {
+    margin: 0 0 20px 0;
+  }
+}
+
+.hello__avatar {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 243px;
+          flex: 0 0 243px;
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+  -webkit-box-shadow: -5px 13px 0 0 #edf7fa;
+          box-shadow: -5px 13px 0 0 #edf7fa;
+  overflow: hidden;
+}
+
+.hello__avatar img {
+  max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .hello__avatar {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 170px;
+            flex: 0 0 170px;
+    width: 170px;
+    height: 170px;
+    margin: 0 0 40px 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
