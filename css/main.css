@@ -37,6 +37,13 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
 .wrapper {
   width: 100%;
   min-height: 100%;
@@ -96,6 +103,17 @@ svg:not(:root) {
 .text {
   font-size: 16px;
   line-height: 143.75%;
+}
+
+.title-posts {
+  font-size: 22px;
+}
+
+@media (max-width: 767.98px) {
+  .title-posts {
+    text-align: center;
+    font-size: 18px;
+  }
 }
 
 .btn {
@@ -378,6 +396,117 @@ svg:not(:root) {
     width: 170px;
     height: 170px;
     margin: 0 0 40px 0;
+  }
+}
+
+.recent-posts {
+  padding: 25px 0 13px 0;
+  background: #edf7fa;
+}
+
+@media (max-width: 767.98px) {
+  .recent-posts {
+    padding: 25px 0 23px 0;
+  }
+}
+
+.recent-posts__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 20px 0;
+}
+
+.recent-posts__title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0 20px 0 0;
+}
+
+.recent-posts__view-all {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  font-size: 16px;
+  font-weight: 23px;
+  color: #00a8cc;
+}
+
+@media (max-width: 767.98px) {
+  .recent-posts__view-all {
+    display: none;
+  }
+}
+
+.recent-posts__items {
+  margin: 0 -10px;
+}
+
+@media (min-width: 767.98px) {
+  .recent-posts__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.recent-posts__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 10px;
+  margin: 0 0 17px 0;
+}
+
+.recent-post {
+  height: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px 10px rgba(187, 225, 250, 0.25);
+          box-shadow: 0 4px 10px rgba(187, 225, 250, 0.25);
+}
+
+.recent-post__title {
+  margin: 0 0 17px 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 146.15385%;
+}
+
+.recent-post__title a {
+  display: inline-block;
+}
+
+.recent-post__title a:hover {
+  color: #ff6464;
+}
+
+@media (max-width: 767.98px) {
+  .recent-post__title {
+    font-size: 22px;
+  }
+}
+
+.recent-post__info {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  line-height: 144.44444%;
+}
+
+.recent-post__info a:hover {
+  text-decoration: underline;
+  color: #ff6464;
+}
+
+.recent-post__info span {
+  margin: 0 10px;
+}
+
+@media (max-width: 767.98px) {
+  .recent-post__info {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=main.css.map */
