@@ -58,7 +58,7 @@ a {
 }
 
 .page {
-  padding: 90px 0 0 0;
+  padding: 50px 0 0 0;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -89,6 +89,7 @@ a {
 }
 
 .title {
+  margin-top: 0;
   font-size: 44px;
   line-height: 136.36364%;
   font-weight: 700;
@@ -249,6 +250,10 @@ body.ie ._ibg img {
 }
 
 .menu__link:hover {
+  color: #ff6464;
+}
+
+.menu__link._active {
   color: #ff6464;
 }
 
@@ -572,6 +577,10 @@ body.ie ._ibg img {
   border-bottom: 1px solid #e0e0e0;
 }
 
+.works__item:last-child {
+  margin: 0;
+}
+
 @media (min-width: 767.98px) {
   .works__item {
     display: -webkit-box;
@@ -618,6 +627,10 @@ body.ie ._ibg img {
   font-size: 30px;
   line-height: 146.66667%;
   font-weight: 700;
+}
+
+.works__title:hover {
+  color: #ff6464;
 }
 
 @media (max-width: 767.98px) {
@@ -729,6 +742,100 @@ body.ie ._ibg img {
 
 .blog__category {
   color: #8695a4;
+}
+
+.article {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 10px 30px;
+}
+
+.article__title {
+  margin: 0 0 30px 0;
+  font-size: 34px;
+  line-height: 147.05882%;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .article__title {
+    font-size: 30px;
+  }
+}
+
+.article__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 20px 0;
+}
+
+.article__year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25px;
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ff6464;
+  border-radius: 16px;
+}
+
+.article__category {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 0 0 25px;
+  font-size: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .article__category {
+    font-size: 18px;
+  }
+}
+
+.article__text p {
+  margin: 0 0 20px 0;
+}
+
+.article__text img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.article__text ul {
+  margin: 0 0 20px 0;
+  padding: 0 0 0 20px;
+  list-style-type: circle;
+}
+
+.article__text *:last-child {
+  margin-bottom: 0;
+}
+
+.contact__title {
+  margin-bottom: 50px;
+}
+
+.contact a {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.contact a:hover {
+  text-decoration: underline;
 }
 
 .social {

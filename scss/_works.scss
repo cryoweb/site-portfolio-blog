@@ -6,6 +6,10 @@
   padding: 0 0 30px 0;
   border-bottom: 1px solid #e0e0e0;
 
+  &:last-child {
+    margin: 0;
+  }
+
   @media (min-width: $md3+px) {
     display: flex;
     align-items: flex-start;
@@ -37,6 +41,10 @@
   font-size: 30px;
   line-height: 44 / 30 * 100%;
   font-weight: 700;
+
+  &:hover {
+    color: $colorAccent;
+  }
 
   @media (max-width: $md3+px) {
     font-size: 24px;

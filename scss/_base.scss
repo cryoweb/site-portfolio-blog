@@ -50,7 +50,7 @@ a {
 }
 
 .page {
-  padding: 90px 0 0 0;
+  padding: 50px 0 0 0;
   flex: 1 1 auto;
 
   @media (max-width: $md3+px) {
@@ -71,6 +71,7 @@ a {
 }
 
 .title {
+  margin-top: 0;
   font-size: 44px;
   line-height: 60 / 44 * 100%;
   font-weight: 700;

@@ -63,6 +63,9 @@
   &:hover {
     color: $colorAccent;
   }
+  &._active {
+    color: $colorAccent;
+  }
 
   @media (max-width: $md3+px) {
     display: block;

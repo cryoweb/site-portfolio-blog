@@ -1,0 +1,16 @@
+.contact {
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  a {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
