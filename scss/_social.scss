@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__item {
+  margin: 0 17px;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  a:hover {
+    color: $colorAccent;
+  }
+}

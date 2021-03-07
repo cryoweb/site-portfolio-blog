@@ -538,7 +538,7 @@ body.ie ._ibg img {
 }
 
 .featured-works {
-  padding: 30px 0 80px 0;
+  padding: 30px 0 50px 0;
 }
 
 @media (max-width: 767.98px) {
@@ -659,5 +659,39 @@ body.ie ._ibg img {
   margin: 0 0 0 25px;
   font-size: 20px;
   color: #8695a4;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__item {
+  margin: 0 17px;
+}
+
+.social__item svg {
+  width: 30px;
+  height: 30px;
+}
+
+.social__item a:hover {
+  color: #ff6464;
+}
+
+.footer {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer__social {
+  margin: 0 0 25px 0;
 }
 /*# sourceMappingURL=main.css.map */
